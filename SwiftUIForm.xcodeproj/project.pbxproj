@@ -11,6 +11,16 @@
 		DF43E79929D5709F004CF8FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E79829D5709F004CF8FF /* ContentView.swift */; };
 		DF43E79B29D570A1004CF8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF43E79A29D570A1004CF8FF /* Assets.xcassets */; };
 		DF43E79E29D570A1004CF8FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF43E79D29D570A1004CF8FF /* Preview Assets.xcassets */; };
+		DF43E7A829D5711B004CF8FF /* TextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7A729D5711B004CF8FF /* TextFieldFormView.swift */; };
+		DF43E7AA29D5735D004CF8FF /* DateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7A929D5735D004CF8FF /* DateFormView.swift */; };
+		DF43E7AC29D574FC004CF8FF /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7AB29D574FC004CF8FF /* ButtonFormView.swift */; };
+		DF43E7B029D576EA004CF8FF /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7AF29D576EA004CF8FF /* FormItem.swift */; };
+		DF43E7B329D57B68004CF8FF /* FormContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7B229D57B68004CF8FF /* FormContentBuilder.swift */; };
+		DF43E7B729D58480004CF8FF /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7B629D58480004CF8FF /* RegexPatterns.swift */; };
+		DF43E7BA29D62D5B004CF8FF /* RegexFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7B929D62D5B004CF8FF /* RegexFormItem.swift */; };
+		DF43E7BD29D62DDC004CF8FF /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7BC29D62DDC004CF8FF /* ValidationError.swift */; };
+		DF43E7C029D62F14004CF8FF /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7BF29D62F14004CF8FF /* ValidationManager.swift */; };
+		DF43E7C329D65B08004CF8FF /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF43E7C229D65B08004CF8FF /* FormState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		DF43E79829D5709F004CF8FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF43E79A29D570A1004CF8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF43E79D29D570A1004CF8FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF43E7A729D5711B004CF8FF /* TextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormView.swift; sourceTree = "<group>"; };
+		DF43E7A929D5735D004CF8FF /* DateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormView.swift; sourceTree = "<group>"; };
+		DF43E7AB29D574FC004CF8FF /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		DF43E7AF29D576EA004CF8FF /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
+		DF43E7B229D57B68004CF8FF /* FormContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContentBuilder.swift; sourceTree = "<group>"; };
+		DF43E7B629D58480004CF8FF /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
+		DF43E7B929D62D5B004CF8FF /* RegexFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexFormItem.swift; sourceTree = "<group>"; };
+		DF43E7BC29D62DDC004CF8FF /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		DF43E7BF29D62F14004CF8FF /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		DF43E7C229D65B08004CF8FF /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,7 @@
 		DF43E79529D5709F004CF8FF /* SwiftUIForm */ = {
 			isa = PBXGroup;
 			children = (
+				DF43E7AD29D57677004CF8FF /* Form */,
 				DF43E79629D5709F004CF8FF /* SwiftUIFormApp.swift */,
 				DF43E79829D5709F004CF8FF /* ContentView.swift */,
 				DF43E79A29D570A1004CF8FF /* Assets.xcassets */,
@@ -65,6 +86,95 @@
 				DF43E79D29D570A1004CF8FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF43E7A429D570C0004CF8FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7A729D5711B004CF8FF /* TextFieldFormView.swift */,
+				DF43E7A929D5735D004CF8FF /* DateFormView.swift */,
+				DF43E7AB29D574FC004CF8FF /* ButtonFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF43E7AD29D57677004CF8FF /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7C129D65AF3004CF8FF /* Events */,
+				DF43E7B429D58433004CF8FF /* Regex */,
+				DF43E7B129D57B3C004CF8FF /* Builder */,
+				DF43E7AE29D576A4004CF8FF /* Model */,
+				DF43E7A429D570C0004CF8FF /* Views */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		DF43E7AE29D576A4004CF8FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7AF29D576EA004CF8FF /* FormItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF43E7B129D57B3C004CF8FF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7B229D57B68004CF8FF /* FormContentBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		DF43E7B429D58433004CF8FF /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7BE29D62ED4004CF8FF /* Manager */,
+				DF43E7BB29D62DB1004CF8FF /* Error */,
+				DF43E7B829D62D2E004CF8FF /* Model */,
+				DF43E7B529D5844E004CF8FF /* Patterns */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
+		DF43E7B529D5844E004CF8FF /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7B629D58480004CF8FF /* RegexPatterns.swift */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		DF43E7B829D62D2E004CF8FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7B929D62D5B004CF8FF /* RegexFormItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF43E7BB29D62DB1004CF8FF /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7BC29D62DDC004CF8FF /* ValidationError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		DF43E7BE29D62ED4004CF8FF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7BF29D62F14004CF8FF /* ValidationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DF43E7C129D65AF3004CF8FF /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				DF43E7C229D65B08004CF8FF /* FormState.swift */,
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +247,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF43E7C029D62F14004CF8FF /* ValidationManager.swift in Sources */,
 				DF43E79929D5709F004CF8FF /* ContentView.swift in Sources */,
+				DF43E7BD29D62DDC004CF8FF /* ValidationError.swift in Sources */,
+				DF43E7AC29D574FC004CF8FF /* ButtonFormView.swift in Sources */,
+				DF43E7B729D58480004CF8FF /* RegexPatterns.swift in Sources */,
+				DF43E7A829D5711B004CF8FF /* TextFieldFormView.swift in Sources */,
+				DF43E7AA29D5735D004CF8FF /* DateFormView.swift in Sources */,
+				DF43E7C329D65B08004CF8FF /* FormState.swift in Sources */,
+				DF43E7B329D57B68004CF8FF /* FormContentBuilder.swift in Sources */,
+				DF43E7BA29D62D5B004CF8FF /* RegexFormItem.swift in Sources */,
+				DF43E7B029D576EA004CF8FF /* FormItem.swift in Sources */,
 				DF43E79729D5709F004CF8FF /* SwiftUIFormApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
